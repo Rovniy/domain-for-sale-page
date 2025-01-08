@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain For Sale</title>
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            background: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        main {
+            max-width: 700px;
+            width: 90%;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        main p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        .highlight {
+            color: #0078d4;
+            font-weight: bold;
+        }
+
+        .cta {
+            margin-top: 20px;
+        }
+
+        .cta a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 12px 30px;
+            background: #0078d4;
+            border-radius: 30px;
+            transition: background 0.3s ease;
+        }
+
+        .cta a:hover {
+            background: #005a9e;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+            padding: 0 20px;
+        }
+
+        footer a {
+            color: #0078d4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            main p {
+                font-size: 0.9rem;
+            }
+
+            .cta a {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header p {
+                font-size: 0.8rem;
+            }
+
+            main p {
+                font-size: 0.8rem;
+            }
+
+            .cta a {
+                font-size: 0.8rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+    <script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const domainElements = document.querySelectorAll('.highlight');
+			const currentDomain = window.location.hostname;
+			domainElements.forEach(el => {
+				el.textContent = currentDomain;
+			});
+		});
+    </script>
+</head>
+<body>
+<header>
+    <h1>Domain For Sale</h1>
+    <p>A premium opportunity to own the domain <span class="highlight">ravy.pro</span></p>
+</header>
+<main>
+    <p>
+        This domain is perfect for establishing a strong online presence. Whether you are building a brand, launching a project, or expanding your digital footprint, <span class="highlight">ravy.pro</span> is the right choice.
+    </p>
+    <div class="cta">
+        <a href="mailto:contact@ravy.pro">Contact Us to Purchase</a>
+    </div>
+</main>
+<footer>
+    <p>Have questions? Reach out to us at <a href="mailto:contact@ravy.pro">contact@ravy.pro</a></p>
+</footer>
+</body>
+</html>
