@@ -163,5 +163,24 @@
 <footer>
     <p>Have questions? Reach out to us at <a href="mailto:contact@ravy.pro">contact@ravy.pro</a></p>
 </footer>
+
+<script type="module">
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+	import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+
+	const firebaseConfig = {
+		apiKey: "AIzaSyCp6fRxB5KNlmqDuN_EmNHQKc34tPf6VbY",
+		authDomain: "domain-sales-66c36.firebaseapp.com",
+		projectId: "domain-sales-66c36",
+		storageBucket: "domain-sales-66c36.firebasestorage.app",
+		messagingSenderId: "1005068250910",
+		appId: "1:1005068250910:web:49fc53928e95a23447a30f",
+		measurementId: "G-ZNZ8MNSWKB"
+	};
+
+	const app = initializeApp(firebaseConfig);
+	getAnalytics(app);
+</script>
+
 </body>
 </html>
